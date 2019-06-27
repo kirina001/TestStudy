@@ -1,0 +1,58 @@
+﻿******************录屏*************************
+
+1.什么是软件？
+	程序+文档+数据
+	
+2.定时任务执行错误的情况
+	没有填起始路径
+	只在接通电源，交流电运行
+	一个或者多个参数错误：更改用户路径
+	
+3.延时变量
+	bat脚本的变量会被设置为临时环境变量
+	环境变量的设置和读取时需要时间
+	设置使用延时变量，就是在for语句里面也会等待设置和读取环境变量
+	&setlocal enabledelayedexpansion
+
+4.IPv4 地址 . . . . . . . . . . . . : 192.168.73.1
+	"tokens=2 delims=:"
+	用:分割，取第二节，也就得到了ip
+
+5.xshell终端
+	提供一个操作linux服务器的远程界面，也就是终端
+
+6.文件系统
+	绝对路径：从根目录出发的路径
+		dos下面以盘符开头，e:\xxx\xx
+		linux下面是以/开头，/usr/local
+		
+	相对路径：从当前路径出发的，等于当前路径+相对路径
+		不以盘符或者/开头，usr/local=/bin/usr/local 	usr\lll
+
+7.常用文件命令
+	cd ls ll
+	vi xxx.xx 创建文件
+	mkdir will	创建文件夹
+	cp xxx.xx yyy.yy 复制文件
+	cp -rf will will1 复制文件夹
+	mv -f yyy.yy /usr/local/will 移动文件或者文件夹
+	rm yyy.yy	删除文件
+	rm -r will1	删除文件夹
+	rm -rf xxx	强制删除文件或者文件夹
+	rm -rf *	强制删除文件夹下面所有内容
+	
+8.常用命令
+	service network stop/start/restart	重启网络服务
+	ifconfig/date .....
+	w：保存	wq：保存退出	q!：退出不保存
+	
+
+
+
+
+
+
+
+
+
+

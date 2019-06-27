@@ -1,0 +1,50 @@
+﻿******************录屏********************
+
+1.查询每一门课程的任课老师，选课学员数，以及平均成绩（，平均年龄）
+	SELECT course.cname,teacher.tname,COUNT(score.sid),AVG(score.score),AVG(student.sage) FROM ((course LEFT JOIN teacher ON course.tid=teacher.tid) LEFT JOIN score ON course.cid=score.cid) LEFT JOIN student on score.sid=student.sid GROUP BY course.cid;
+	
+	SELECT course.cname,teacher.tname,COUNT(score.sid),AVG(score.score),AVG(student.sage) FROM course,teacher,score,student WHERE course.tid=teacher.tid AND course.cid=score.cid AND score.sid=student.sid GROUP BY course.cid;
+
+2.游标（CURSOR）
+	它只能在存储过程中使用。
+	查询每一个学员的学号，姓名，（平均成绩），总成绩
+	
+	
+3.互联网
+	局域网
+		在局域网内的电脑，都有一个局域网ip：192.168.x.x
+		如果我们关闭防火墙，是可以互相连接的，比如ping ip
+
+	内网ip，外网ip
+		内网ip是指局域网里面可以访问的ip
+		外网ip是指互联网范围的ip
+		
+4.ip端口
+	ip范围：255.255.255.255
+		
+	端口
+		可以唯一标识一个服务
+		一个端口只能被一个程序占用
+		但是一个程序，可以占用多个端口
+		
+	url地址
+		ip+port+path
+		http://192.168.2.191:8081/index.htm对应webapps\ROOT\index.htm
+		index文件是路径下默认访问的文件，不需要一定带上文件名，其他文件，一定要带上文件名。
+		其他文件夹，需要带上文件夹路径
+		http://192.168.2.191:8081/test/对应webapps\test\index.htm
+
+5.信号
+	电信号
+		传递数据以二进制的字节流，对应有无电流
+	电磁波
+		怎么对应二进制？正弦余弦的最高和最低点对应
+	光信号
+		怎么对应二进制？有光和没光
+		
+		
+		
+		
+		
+
+******************录屏********************

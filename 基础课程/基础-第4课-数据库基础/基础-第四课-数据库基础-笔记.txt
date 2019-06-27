@@ -1,0 +1,47 @@
+﻿***************录屏*********************
+
+1.如何学习linux？
+	学习常用的命令和技能
+	多实际操练
+	
+2.远程登录
+	我本地机器，可以通过网络，连接互联网上面的服务
+	
+3.学习方法
+	动手
+	分析问题
+	找解决方案
+	解决问题
+
+4.CREATE TABLE `theacher` (`tid`  int(8) UNSIGNED NOT NULL COMMENT '老师号',`Tname`  varchar(32) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL COMMENT '老师名字' ,PRIMARY KEY (`tid`)) ENGINE=InnoDB DEFAULT CHARACTER SET=utf8 COLLATE=utf8_general_ci ROW_FORMAT=DYNAMIC;
+
+5.主键
+	它的值用于唯一地标识表中的某一条记录。
+	主键不会重复
+
+6.分页
+	select * from score limit index,page;
+	page=4
+	index：表示从哪一条记录开始，注意：index从0开始计数
+	page：每一页显示的数目
+	第一页的index应该是多少？0
+	第二页的index应该是多少？4
+	第二页的index应该是多少？8
+	index=（页数-1）*每页显示数目
+	
+7.模糊查询的匹配问题
+	like 'aaa'：字段值等于'aaa'
+	like 'aaa%'：匹配以aaa开头的所有字符，比如：aaa,aaax,aaa青鸿
+	like '%aaa'：匹配以aaa结尾的所有字符，比如：aaa,xaaa,青鸿.aaa
+	like '%aaa%'：匹配包含aaa的所有字符，比如：aaa,xaaax,啊aaa,aaax
+
+
+
+
+
+
+
+
+
+
+***************录屏*********************
